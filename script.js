@@ -42,8 +42,8 @@
     `;
   }
 
-  if (container && Array.isArray(window.PROJECTS)) {
-    container.innerHTML = window.PROJECTS.map(renderProject).join("");
+  if (container && typeof PROJECTS !== "undefined" && Array.isArray(PROJECTS)) {
+    container.innerHTML = PROJECTS.map(renderProject).join("");
   }
 
   const yearEl = document.getElementById("year");
