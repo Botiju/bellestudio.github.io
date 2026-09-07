@@ -1,25 +1,64 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的個人作品集</title>
-    <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; background: #f4f4f9; }
-        h1 { color: #333; }
-        .portfolio { margin-top: 30px; display: inline-block; text-align: left; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boti — 作品集</title>
+<meta name="description" content="Boti 的獨立 App 作品集,專注情緒陪伴與美感體驗的應用程式開發。">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>歡迎來到我的作品集網站！</h1>
-    <p>這是使用 GitHub Pages 快速建立的網站。</p>
-    
-    <div class="portfolio">
-        <h2>我的精選項目</h2>
-        <ul>
-            <li><strong>專案 A：</strong> 簡單的功能介紹</li>
-            <li><strong>專案 B：</strong> 我的開源小工具</li>
-        </ul>
-    </div>
+
+<div class="wrap">
+
+  <header class="hero">
+    <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+      <!-- geometric monogram, constructed "B" from straight strokes + two arcs -->
+      <path class="mark-stroke" d="
+        M 30 15
+        L 30 85
+        M 30 15
+        L 55 15
+        A 17 17 0 0 1 55 49
+        L 30 49
+        M 55 49
+        A 18 18 0 0 1 55 85
+        L 30 85
+      "/>
+    </svg>
+
+    <h1>Boti<span class="hero-sub">作品集</span></h1>
+    <p class="hero-desc">獨立開發應用程式,專注情緒陪伴與美感體驗——把細膩的感受,做成隨手可用的東西。</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p>這裡收著正在做、做完的 App。每一個都從一個很小的念頭開始,慢慢長成看得見、摸得到的介面。</p>
+    </section>
+
+    <section id="projects" class="projects" aria-label="作品列表">
+      <!-- project entries injected by script.js from projects-data.js -->
+    </section>
+
+    <section class="more-soon">
+      <p class="more-soon-label">下一個作品</p>
+      <p class="more-soon-text">還在整理,準備好之後會出現在這裡。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Boti</p>
+    <a href="https://github.com/" class="footer-link" id="github-link">GitHub</a>
+  </footer>
+
+</div>
+
+<script src="projects-data.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
